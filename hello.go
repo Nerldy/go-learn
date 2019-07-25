@@ -7,7 +7,9 @@ var y string
 var z bool
 
 func main() {
-	fmt.Println(x)
-	fmt.Println(y)
-	fmt.Println(z)
+	x = 42
+	y = "James Bond"
+	z = true
+	s := fmt.Sprintf("x is %d, y is %s, and z is %t", x, y, z)
+	fmt.Println(s)
 }
